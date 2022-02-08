@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.container{
+    align-items: center;
+    justify-content:center; 
+}
+
+.container >.items{
+    display: inline-block;
+}
+.items >p{ 
+    font-size: 23px;
+    
+}
+.items >p,img{
+    display: inline-block;
+}
+
+.items >.p1{
+    border: 3px solid palevioletred;
+    padding: 20px;
+    width: 30em;
+    background-color: palevioletred;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .items >.p1{
+        width: 5em;
+    }
+
+   
+} 
